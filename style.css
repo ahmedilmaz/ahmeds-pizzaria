@@ -1,0 +1,255 @@
+html {
+scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #fff3e0;
+color: #222;
+text-align: center;
+}
+
+/* NAVIGATION */
+
+nav {
+background: #181818;
+padding: 18px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 18px;
+font-size: 18px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: #ff9800;
+}
+
+/* HERO */
+
+.hero {
+min-height: 550px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #e63900, #ff9800);
+color: white;
+padding: 40px 20px;
+}
+
+.hero-content {
+animation: fadeIn 1s ease;
+}
+
+.pizza-logo {
+font-size: 90px;
+animation: spin 2s ease;
+}
+
+.hero h1 {
+font-size: 58px;
+margin: 10px 0;
+}
+
+.hero p {
+font-size: 24px;
+margin-bottom: 35px;
+}
+
+/* BUTTONS */
+
+.menu-button,
+button {
+display: inline-block;
+background: #181818;
+color: white;
+border: none;
+padding: 16px 32px;
+border-radius: 10px;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+transition: 0.3s ease;
+}
+
+.menu-button:hover,
+button:hover {
+background: #333;
+transform: translateY(-4px);
+}
+
+/* SECTIONS */
+
+section {
+padding: 60px 20px;
+}
+
+section h2 {
+font-size: 38px;
+margin-bottom: 35px;
+}
+
+/* MENU CARDS */
+
+.pizza {
+background: white;
+margin: 25px auto;
+padding: 30px;
+max-width: 450px;
+border-radius: 18px;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+transition: 0.3s ease;
+}
+
+.pizza:hover {
+transform: translateY(-8px);
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pizza-icon {
+font-size: 55px;
+}
+
+.pizza h3 {
+color: #e65100;
+font-size: 24px;
+}
+
+.pizza p {
+font-size: 17px;
+line-height: 1.5;
+}
+
+.pizza strong {
+display: block;
+color: #d84315;
+font-size: 24px;
+margin-top: 18px;
+}
+
+/* MESSAGE */
+
+#message {
+font-size: 18px;
+font-weight: bold;
+margin-top: 20px;
+}
+
+/* ABOUT */
+
+.about {
+background: #ffe0b2;
+}
+
+.about p {
+max-width: 700px;
+margin: auto;
+font-size: 18px;
+line-height: 1.7;
+}
+
+/* CONTACT */
+
+.contact {
+background: #222;
+color: white;
+}
+
+.contact a {
+color: #ff9800;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+background: #111;
+color: white;
+padding: 18px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes spin {
+from {
+transform: rotate(-180deg) scale(0.5);
+}
+
+to {
+transform: rotate(0deg) scale(1);
+}
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+nav {
+padding: 14px 5px;
+}
+
+nav a {
+margin: 0 5px;
+font-size: 14px;
+}
+
+.hero {
+min-height: 500px;
+}
+
+.pizza-logo {
+font-size: 70px;
+}
+
+.hero h1 {
+font-size: 40px;
+}
+
+.hero p {
+font-size: 19px;
+}
+
+section {
+padding: 45px 15px;
+}
+
+section h2 {
+font-size: 30px;
+}
+
+.pizza {
+width: 95%;
+padding: 25px 18px;
+}
+
+button,
+.menu-button {
+width: 85%;
+}
+}
